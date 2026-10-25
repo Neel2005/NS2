@@ -1,0 +1,16 @@
+#!/bin/bash
+
+ns ring1.tcl 0.2Mb
+awk -v bw=0.2 -f packetr.awk testout.tr
+
+ns ring1.tcl 0.4Mb
+awk -v bw=0.4 -f packetr.awk testout.tr
+
+ns ring1.tcl 0.8Mb
+awk -v bw=0.8 -f packetr.awk testout.tr
+
+ns ring1.tcl 0.9Mb
+awk -v bw=0.9 -f packetr.awk testout.tr
+
+ns ring1.tcl 1Mb
+awk -v bw=1 -f packetr.awk testout.tr

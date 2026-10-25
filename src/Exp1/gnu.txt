@@ -1,0 +1,13 @@
+set title "Plot of Rate versus Link bandwidth" 
+set term post enh color 
+set out 'output1.eps' 
+set key top 
+set key left 
+set key box 
+set xrange [0:3] 
+set yrange [70:120] 
+set xtics 0.2 
+set ytics 5 
+set xlabel "Link Bandwidth in Mbps" 
+set ylabel "Link Rate in percentage" 
+plot "result1.log" using 1:2 title "Curve" with linespoints  
